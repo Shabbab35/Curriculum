@@ -1,0 +1,57 @@
+body {
+  font-family: Arial, sans-serif;
+  direction: rtl;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  width: calc(25% - 20px);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px 10px;
+  text-align: right;
+}
+
+/* صف عنوان الأسبوع بخلفية رصاصية */
+.card-title {
+  background-color: #ccc;
+  font-weight: bold;
+  text-align: center;
+  font-size: 1.1em;
+}
+
+/* صف التاريخ */
+.date-row {
+  background-color: #fcfcfc;
+  text-align: center;
+  font-weight: normal;
+}
+
+/* صف رأس الجدول (اليوم والدرس) */
+.header-row {
+  background-color: #e9e9e9;
+  text-align: center;
+  font-weight: bold;
+}
