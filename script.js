@@ -24,8 +24,17 @@ function createCard(week) {
   // إنشاء صفوف لكل يوم باستخدام ترتيب الأيام
   daysOrder.forEach(day => {
     const lesson = week.lessons[day] || "";
+    
+    // تحديد الصنف المناسب إذا كان اليوم من أيام الإجازات باستخدام المفاتيح العربية
+    let extraClass = "";
+    if (week["إجازة عيد الفطر"] && week["إجازة عيد الفطر"].includes(day)) {
+      extraClass = "eid-fitr";
+    } else if (week["إجازة عيد الأضحى"] && week["إجازة عيد الأضحى"].includes(day)) {
+      extraClass = "eid-adha";
+    }
+    
     tableHTML += `
-      <tr>
+      <tr class="${extraClass}">
         <td>${day}</td>
         <td>${lesson}</td>
       </tr>
