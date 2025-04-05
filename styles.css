@@ -42,7 +42,7 @@ th, td {
   text-align: right;
 }
 
-/* رأس البطاقة بلون ثابت */
+/* رأس البطاقة بلون ثابت #219C90 */
 .card-title {
   background-color: #219C90;
   font-weight: bold;
@@ -83,19 +83,20 @@ th, td {
   }
 }
 
-/* تظليل أيام الإجازات (عيد الفطر، عيد الأضحى) كما كان */
+/* تظليل أيام إجازة عيد الفطر وعيد الأضحى */
 .eid-fitr,
 .eid-adha {
   background-color: #7ABA78 !important;
 }
 
-/* تظليل أيام الإجازة الأسبوعية باللون المطلوب */
+/* تظليل أيام إجازة أسبوعية باللون #68D2E8 */
 .weekly-holiday {
   background-color: #68D2E8 !important;
   color: white;
 }
-/* تظليل أيام الإجازة المطولة باللون المطلوب */
+
+/* تظليل أيام إجازة مطولة باللون #F6E9B2 */
 .long-holiday {
   background-color: #F6E9B2 !important;
+  color: black;
 }
-
