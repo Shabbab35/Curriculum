@@ -21,7 +21,6 @@ body {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  /* إذا أردت دعم التفاعل عبر لوحة المفاتيح */
   outline: none;
 }
 
@@ -43,12 +42,13 @@ th, td {
   text-align: right;
 }
 
-/* صف عنوان الأسبوع بخلفية رصاصية */
+/* رأس البطاقة بلون ثابت */
 .card-title {
-  background-color: #ccc;
+  background-color: #219C90;
   font-weight: bold;
   text-align: center;
   font-size: 1.1em;
+  color: white;
 }
 
 /* صف التاريخ */
@@ -83,9 +83,14 @@ th, td {
   }
 }
 
-/* تظليل أيام إجازة عيد الفطر وعيد الأضحى */
+/* تظليل أيام الإجازات (عيد الفطر، عيد الأضحى) كما كان */
 .eid-fitr,
 .eid-adha {
   background-color: #7ABA78 !important;
 }
 
+/* تظليل أيام الإجازة الأسبوعية باللون المطلوب */
+.weekly-holiday {
+  background-color: #68D2E8 !important;
+  color: white;
+}
