@@ -94,3 +94,8 @@ th, td {
   background-color: #68D2E8 !important;
   color: white;
 }
+/* تظليل أيام الإجازة المطولة باللون المطلوب */
+.long-holiday {
+  background-color: #F6E9B2 !important;
+}
+
