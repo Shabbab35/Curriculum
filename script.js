@@ -33,6 +33,8 @@ function createCard(week) {
       extraClass = "eid-adha";
     } else if (lesson.includes("إجازة أسبوعية")) {
       extraClass = "weekly-holiday";
+    } else if (lesson.includes("إجازة مطولة")) {
+      extraClass = "long-holiday";
     }
     
     tableHTML += `
