@@ -25,11 +25,11 @@ function createCard(week) {
   daysOrder.forEach(day => {
     const lesson = week.lessons[day] || "";
     
-    // تحديد الصنف المناسب إذا كان اليوم من أيام الإجازات باستخدام المفاتيح العربية
+    // تحديد الصنف المناسب إذا كانت قيمة الدرس تشير إلى إجازة
     let extraClass = "";
-    if (week["إجازة عيد الفطر"] && week["إجازة عيد الفطر"].includes(day)) {
+    if (lesson === "إجازة عيد الفطر") {
       extraClass = "eid-fitr";
-    } else if (week["إجازة عيد الأضحى"] && week["إجازة عيد الأضحى"].includes(day)) {
+    } else if (lesson === "إجازة عيد الأضحى") {
       extraClass = "eid-adha";
     }
     
