@@ -24,12 +24,14 @@ function createCard(week) {
   // إنشاء صفوف لكل يوم باستخدام ترتيب الأيام
   daysOrder.forEach(day => {
     const lesson = week.lessons[day] || "";
+    // تطبيع النص: إزالة الفراغات الزائدة
+    const normalizedLesson = lesson.trim().replace(/\s+/g, " ");
     
-    // تحديد الصنف المناسب إذا كانت قيمة الدرس تشير إلى إجازة
+    // تحديد الصنف المناسب بناءً على النص المطّبع
     let extraClass = "";
-    if (lesson === "إجازة عيد الفطر") {
+    if (normalizedLesson === "إجازة عيد الفطر") {
       extraClass = "eid-fitr";
-    } else if (lesson === "إجازة عيد الأضحى") {
+    } else if (normalizedLesson === "إجازة عيد الأضحى") {
       extraClass = "eid-adha";
     }
     
